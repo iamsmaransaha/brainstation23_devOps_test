@@ -1,3 +1,0 @@
-kubectl apply -f .
-
-minikube service laravelapp1 --url
