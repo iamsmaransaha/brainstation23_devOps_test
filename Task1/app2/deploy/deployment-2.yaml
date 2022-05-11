@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laravelapp2
+  labels:
+    app: laravelapp2
+spec:
+  selector:
+    matchLabels:
+      app: laravelapp2
+  replicas: 2
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: laravelapp2
+    spec:
+      containers:
+        - image: iamsmaransaha/app2
+          imagePullPolicy: Always
+          name: laravelapp2
+          ports:
+            - containerPort: 80
