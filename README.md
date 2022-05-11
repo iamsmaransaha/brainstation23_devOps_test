@@ -1,5 +1,7 @@
 # brainstation23_devOps_test
 
+task 2 & task3 Readme.md is inside the task folders
+
 ## Task1
 
 ### for Task 1 , i have created two laravel project: 
