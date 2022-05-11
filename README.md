@@ -28,6 +28,23 @@ location: Task1/app1/deploy & Task2/app2/deploy
 
 > i have used minikube to deploy these services to kubernetes
 
+## deploy my laravel application in kubernetes by following these easy steps
+
+```
+$ minikube start
+$ git clone "https://github.com/iamsmaransaha/brainstation23_devOps_test.git"
+$ cd brainstation23_devOps_test
+$ cd Task1/app1/deploy
+$ kubectl apply -f .
+$    cd ..
+$    cd ..
+$ cd app2/deploy
+$   kubectl apply -f .
+$   kubectl get pods
+```
+
+
+
 
 
 
